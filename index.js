@@ -27,7 +27,7 @@ app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', auth, function (req, res) {
-  res.sendFile(__dirname + "/public/index.html");
+  res.sendFile(__dirname + "/public/main-index.html");
 });
 
 
